@@ -40,7 +40,7 @@ public class Test001 {
                 log().all(true).
                 body(rb).
                 post("https://reqres.in/api/users").andReturn();
-//        response.prettyPrint();
+        response.prettyPrint();
         response.then().statusCode(201);
 
         ResponseBody reBody = response.as(ResponseBody.class);
